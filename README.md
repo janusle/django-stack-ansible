@@ -1,6 +1,7 @@
 # Django-stack-ansible
 
-The ansible playbook is used to deploy most of my personal django projects
+The ansible playbook is used to deploy most of my personal django projects.
+Now it just works with Ubuntu14.04.
 
 ![topology](ansible-django-stack.png)
 
@@ -97,3 +98,10 @@ Host deployment_box
 # Replace INVENTORY_FILE with your inventory file name
 ansible-playbook -i environments/INVENTORY_FILE --vault-password-file=.ansible-vault-file site.yml
 ```
+
+
+## TODO:
+
+* Create a test playbook
+* Create an uWSGI Emperor conf file template(Now emperor settings are specified through command line) 
+* Enhance the configuration of postgresql(Now it uses default one.)
