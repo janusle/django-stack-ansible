@@ -2,9 +2,12 @@
 
 The ansible playbook is used to deploy most of my personal django projects
 
+![topology](ansible-django-stack.png)
+
 It deploys:
 
 * Nginx
+* Supervisor
 * uWSGI
 * Django
 * Postgresql(Optional)
