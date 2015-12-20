@@ -80,14 +80,14 @@ cd vagrant && vagrant up
 # Show the ssh config of the vm
 cd vagrant && vagrant ssh-config
 # A sample ssh config is like the following:
-Host deployment_box
+Host local_box
   HostName 127.0.0.1
   User vagrant
   Port 2222
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile /home/yanle/vagrant/deployment_box/.vagrant/machines/deployment_box/virtualbox/private_key
+  IdentityFile /home/user1/vagrant/local_box/.vagrant/machines/local_box/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
 ```
@@ -103,5 +103,5 @@ ansible-playbook -i environments/INVENTORY_FILE --vault-password-file=.ansible-v
 ## TODO:
 
 * Create a test playbook
-* Create an uWSGI Emperor conf file template(Now emperor settings are specified through command line) 
+* Create an uWSGI Emperor conf file template(Now emperor settings are specified through command line)
 * Enhance the configuration of postgresql(Now it uses default one.)
