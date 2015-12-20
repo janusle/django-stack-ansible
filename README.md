@@ -86,7 +86,7 @@ Host deployment_box
   IdentityFile /home/yanle/vagrant/deployment_box/.vagrant/machines/deployment_box/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
-
+```
 
 ## Deployment
 
