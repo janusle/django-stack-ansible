@@ -29,7 +29,8 @@ srv
 ## Deployment Requirements
 
 + [Ansible](http://www.ansible.com/) >= 1.9.4
-
++ [Virtualbox](https://www.virtualbox.org/) (Optional)
++ [Vagrant](https://www.vagrantup.com/) (Optional)
 
 ## Before Deployment
 
@@ -65,6 +66,27 @@ srv
       User xxx
       IdentityFile ~/.ssh/ssh_key
     ```
+
+6. If you test deployment locally
+
+```bash
+# Start the vm
+cd vagrant && vagrant up
+
+# Show the ssh config of the vm
+cd vagrant && vagrant ssh-config
+# A sample ssh config is like the following:
+Host deployment_box
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /home/yanle/vagrant/deployment_box/.vagrant/machines/deployment_box/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
 
 ## Deployment
 
