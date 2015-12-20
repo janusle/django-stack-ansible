@@ -100,8 +100,8 @@ ansible-playbook -i environments/INVENTORY_FILE --vault-password-file=.ansible-v
 ```
 
 
-## TODO:
+## TODO
 
 * Create a test playbook
 * Create an uWSGI Emperor conf file template(Now emperor settings are specified through command line)
-* Enhance the configuration of postgresql(Now it uses default one.)
+* Enhance the configuration of postgresql(Now it uses default one)
